@@ -72,7 +72,7 @@ header nav ul li {
 
 header .menuButton {
     align-items: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 4px;
     justify-content: center;
@@ -81,19 +81,58 @@ header .menuButton {
 header .menuButton span {
     content: " ";
     width: 16px;
-    border: 1px solid var(--bg-white); 
+    border: 1px solid var(--bg-white);
+}
+
+.close {
+    display: none;
 }
 
 @media screen and (max-width: 1200px) {
+
+
+    header .menuButton {
+        display: flex;
+    }
+
     header nav ul .menu {
         display: none;
     }
+
     header nav ul {
         justify-content: space-between;
         width: 100%;
     }
+
     header nav ul .right {
         margin: 0;
+    }
+
+    .menu-show {
+        align-items: flex-start !important;
+        background-color: var(--header);
+        display: flex !important;
+        flex-direction: column;
+        gap: 0.2rem;
+        height: 100%;
+        inset: 0;
+        top: 42px;
+        justify-content: center;
+        position: fixed;
+        width: 100vw !important;
+        z-index: 10;
+    }
+
+    .close {
+        transform: translateY(2px);
+    }
+
+    .close .first {
+        transform: rotate(45deg);
+    }
+
+    .close .second {
+        transform: rotate(-45deg) translateY(-4.5px) translateX(4.5px);
     }
 }
 
