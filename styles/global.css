@@ -146,6 +146,7 @@ main section {
 }
 
 main .main-section {
+    overflow-x: hidden;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -188,14 +189,14 @@ main .main-section div h2 {
 main .Watch-section {
     align-items: center;
     background-image: url("../public/assets/hero-apple-watch.jpg");
-    background-position: center;
+    background-position: center 10%;
     background-size: cover;
     display: flex;
     flex-direction: column;
     height: 80vh;
     justify-content: flex-end;
     margin-bottom: 1rem;
-    max-height: 1000px;
+    max-height: 1800px;
     padding: 4rem;
     width: 100%;
 }
