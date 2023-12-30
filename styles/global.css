@@ -441,6 +441,7 @@ main .carousel img {
 }
 
 #footer {
+    max-width: 2559px;
     align-items: flex-start;
     display: flex;
     gap: 2em;
